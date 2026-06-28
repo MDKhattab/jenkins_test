@@ -1,14 +1,20 @@
-# Use the official Nginx image
-FROM nginx:alpine
+#BASE Image
+FROM node:16
 
-# Remove the default website
-RUN rm -rf /usr/share/nginx/html/*
+#Working directory
+WORKDIR /usr/src/app
 
-# Copy website files
-COPY index.html /usr/share/nginx/html/
+#COPY package.json
+COPY package*.json ./
 
-# Expose port 80
-EXPOSE 80
+#TO get dependencies
+RUN npm install
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+#COPY all app code
+COPY . .
+
+#Expose port
+EXPOSE 3000
+
+#Start server
+CMD ["npm", "start"]
