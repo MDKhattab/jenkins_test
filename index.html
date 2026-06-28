@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Arena</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #006400;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #004d00;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1400&q=80") center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.2);
+        }
+
+        .card h3 {
+            color: #006400;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #006400;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⚽ Football Arena</h1>
+    <p>Your Home for Football News & Scores</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Teams</a>
+    <a href="#">Matches</a>
+    <a href="#">Players</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to Football Arena</h1>
+</section>
+
+<div class="container">
+    <h2 style="margin-bottom:20px;">Latest Highlights</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Latest Matches</h3>
+            <p>Stay updated with today's football fixtures and results from leagues around the world.</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Players</h3>
+            <p>Discover the world's best football players and their latest performances.</p>
+        </div>
+
+        <div class="card">
+            <h3>League Standings</h3>
+            <p>Follow your favorite clubs and keep track of league rankings.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Football Arena | Built with HTML & Docker</p>
+</footer>
+
+</body>
+</html>
